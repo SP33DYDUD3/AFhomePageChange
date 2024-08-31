@@ -77,3 +77,8 @@ button {
 .flowers{
     margin-top: 50px;
 }
+.viewMore:hover{
+    background-color: #AE2C21;
+    color: white;
+    transition: 300ms ease-in;
+}
