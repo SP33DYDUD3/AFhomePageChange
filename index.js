@@ -83,23 +83,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 document.getElementById('VMSymp').addEventListener('click', function() {
-    window.location.href = "https://www.arelysflowersplantsandgifts.com/sympathy";
+    window.parent.location.href = "https://www.arelysflowersplantsandgifts.com/sympathy";
 });
 document.getElementById('VMLove').addEventListener('click', function() {
-    window.location.href = "https://www.arelysflowersplantsandgifts.com/love";
+    window.parent.location.href = "https://www.arelysflowersplantsandgifts.com/love";
 });
 document.getElementById('VMGrad').addEventListener('click', function() {
-    window.location.href = "https://www.arelysflowersplantsandgifts.com/graduation";
+    window.parent.location.href = "https://www.arelysflowersplantsandgifts.com/graduation";
 });
 document.getElementById('VMBuchon').addEventListener('click', function() {
-    window.location.href = "https://www.arelysflowersplantsandgifts.com/ramo-buchon";
+    window.parent.location.href = "https://www.arelysflowersplantsandgifts.com/ramo-buchon";
 });
 document.getElementById('VMShopBuchon').addEventListener('click', function() {
-    window.location.href = "https://www.arelysflowersplantsandgifts.com/category/buch%C3%B3n";
+    window.parent.location.href = "https://www.arelysflowersplantsandgifts.com/category/buch%C3%B3n";
 });
 document.getElementById('VMArrang').addEventListener('click', function() {
-    window.location.href = "https://www.arelysflowersplantsandgifts.com/floral-arrangments";
+    window.parent.location.href = "https://www.arelysflowersplantsandgifts.com/floral-arrangments";
 });
 document.getElementById('VMBouq').addEventListener('click', function() {
-    window.location.href = "https://www.arelysflowersplantsandgifts.com/our-bouquets";
+    window.parent.location.href = "https://www.arelysflowersplantsandgifts.com/our-bouquets";
 });
