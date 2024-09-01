@@ -94,6 +94,9 @@ document.getElementById('VMGrad').addEventListener('click', function() {
 document.getElementById('VMBuchon').addEventListener('click', function() {
     window.location.href = "https://www.arelysflowersplantsandgifts.com/ramo-buchon";
 });
+document.getElementById('VMShopBuchon').addEventListener('click', function() {
+    window.location.href = "https://www.arelysflowersplantsandgifts.com/category/buch%C3%B3n";
+});
 document.getElementById('VMArrang').addEventListener('click', function() {
     window.location.href = "https://www.arelysflowersplantsandgifts.com/floral-arrangments";
 });
