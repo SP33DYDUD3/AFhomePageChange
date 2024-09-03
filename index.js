@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const sympathyBtn = document.getElementById('sympathy');
     const loveBtn = document.getElementById('love');
     const VMSymp = document.getElementById('VMSymp');
+    const loveDiv1 = document.getElementById('loveDiv1');
 
     function gradDisplay(){
         lovePrevBtn.style.display = 'none';
@@ -109,12 +110,15 @@ document.addEventListener('DOMContentLoaded', function () {
         loveNextBtn.style.display = 'block';
         loveImage1.style.display = 'block';
         VMLove.style.display = 'none';
+        loveDiv1.style.display= 'block';
     }
     function loveNextBtnDisplay(){
         lovePrevBtn.style.display = 'block';
         loveNextBtn.style.display = 'none';
         loveImage1.style.display = 'none';
         VMLove.style.display = 'block';
+        loveDiv1.style.backgroundImage= 'none';
+        loveDiv1.style.display= 'none';
     }
     function sympDisplay(){
         sympNextBtnDisplay();
@@ -154,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const VMBuchon = document.getElementById('VMBuchon');
     const shopBuchon = document.getElementById('ShopBuchon');
     const VMArrang = document.getElementById('VMArrang');
+    const arranDiv = document.getElementById('arranDiv1');
 
     function bouquetsDisplay(){
         buchonPrevBtn.style.display = 'none';
@@ -170,12 +175,15 @@ document.addEventListener('DOMContentLoaded', function () {
         arranNextBtn.style.display = 'block';
         arranImage1.style.display = 'block';
         VMArrang.style.display = 'none';
+        arranDiv.style.display= 'block';
     }
     function ArrangementsNextBtnDisplay(){
         arranPrevBtn.style.display = 'block';
         arranNextBtn.style.display = 'none';
         arranImage1.style.display = 'none';
         VMArrang.style.display = 'block';
+        arranDiv.style.backgroundImage= 'none';
+        arranDiv.style.display= 'none';
     }
     function buchonDisplay(){
         buchonNextBtnDisplay();
@@ -204,6 +212,22 @@ document.addEventListener('DOMContentLoaded', function () {
     bouquetsBtn.addEventListener('click', bouquetsDisplay);
     arrangementsBtn.addEventListener('click', ArrangementsDisplay);
     ramoBuchonBtn.addEventListener('click', buchonDisplay);
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const blurDiv = document.querySelectorAll('blurImg');
+
+    blurDiv.forEach(div => {
+        const img = div.querySelector("img");
+
+        function loaded(){
+            div.classList.add("loaded");
+        }
+        if (img.complete){
+            loaded();
+        } else{
+            img.addEventListener('load', loaded);
+        }
+    });
 });
 
 document.getElementById('VMSymp').addEventListener('click', function() {
